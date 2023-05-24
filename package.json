@@ -1,0 +1,52 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "prepare": "husky install",
+    "commit": "git-cz",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "lint:check": "eslint --ext .ts,.tsx,.js,.jsx,.vue .",
+    "lint:fix": "eslint --ext .ts,.tsx,.js,.jsx,.vue --fix .",
+    "stylelint:check": "stylelint **/*.{scss,css}",
+    "stylelint:fix": "stylelint --fix **/*.{scss,css}",
+    "format:lint-staged": "prettier --write",
+    "lint:lint-staged": "eslint --fix",
+    "stylelint:lint-staged": "stylelint --fix"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@types/node": "^18",
+    "@typescript-eslint/eslint-plugin": "^5.59.7",
+    "@typescript-eslint/parser": "^5.59.7",
+    "@vuestic/nuxt": "^1.0.11",
+    "commitizen": "^4.3.0",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.14.0",
+    "git-cz": "^4.9.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "nuxt": "^3.5.1",
+    "prettier": "^2.8.8",
+    "stylelint": "^15.6.2",
+    "stylelint-config-standard-scss": "^9.0.0"
+  },
+  "dependencies": {
+    "@vuestic/ag-grid-theme": "^1.1.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
+  }
+}
